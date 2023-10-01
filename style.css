@@ -1,5 +1,6 @@
 /* Carrousel de texto */
 * {
+  font-family: 'Noto Sans JP', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,12 +11,13 @@
 .black-box {
   color: #fff;
   font-size: smaller;
-  background-color: black;
+  background-color: #354452;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100vw; /* Ajusta el ancho según tus necesidades */
+  width: 80vw; /* Ajusta el ancho según tus necesidades */
   overflow: hidden;
+  padding-inline: 5vw;
 }
 
 .black-box ul {
@@ -72,7 +74,6 @@
   flex-direction: column;
   text-align: center;
   font-size: 1.8rem;
-  font-weight: bold;
 }
 
 .steps {
@@ -157,8 +158,14 @@
   overflow: hidden;
 }
 
+.product-description img {
+  border-radius: 0.5em;
+}
+
 .price {
+  padding-block: 2vw;
   width: 20%;
+}
 
 .past-price {
   text-decoration: line-through;
@@ -172,5 +179,23 @@
 }
 
 .product-details {
-  background-color: #5b7ce6;
+  padding-block: 2vw;
+}
+.product-details p {
+  padding-bottom: 3vw;
+  color: gold;
+}
+
+
+footer {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  font-size: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #354452;
+  color: #fff;
+  line-height: 2;
+  padding: 5vw;
 }
