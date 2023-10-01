@@ -38,7 +38,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100vw; /* Ajusta el ancho según tus necesidades */
+  width: 100vw;
+  /* Ajusta el ancho según tus necesidades */
   overflow: hidden;
   padding-inline: 4vw;
   padding-bottom: 6vw;
@@ -50,7 +51,8 @@
   flex-direction: column;
   gap: 0.7rem;
   align-items: center;
-  width: 100vw; /* Ajusta el ancho según tus necesidades */
+  width: 100vw;
+  /* Ajusta el ancho según tus necesidades */
   overflow: hidden;
   padding-inline: 5vw;
   padding-bottom: 3vw;
@@ -75,7 +77,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100vw; /* Ajusta el ancho según tus necesidades */
+  width: 100vw;
+  /* Ajusta el ancho según tus necesidades */
   overflow: hidden;
   padding-inline: 5vw;
 }
@@ -83,7 +86,7 @@
 
 .steps p {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   text-align: center;
   font-size: 3vw;
   width: 50vw;
@@ -132,14 +135,51 @@
 
 .product-img img {
   width: 100%;
-  height: 100%; /* Establece la altura para que coincida con el contenedor */
+  height: 100%;
+  /* Establece la altura para que coincida con el contenedor */
   object-fit: cover;
   padding: 5%;
 }
 
 .opinion {
   display: none;
+  flex-direction: column;
+  margin: 5vw;
 }
+
+.opinion-text {
+  padding-bottom: 3vw;
+  font-size: smaller;
+}
+
+.influencer {
+  display: flex;
+}
+
+.influencer img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.stars {
+  color: gold;
+}
+
+.influencer div {
+  padding-left: 5vw;
+  font-size: smaller;
+  font-weight: bold;
+}
+
+.text-green {
+  color: #27a13c;
+  font-size: smaller;
+  font-weight: lighter;
+}
+
+
 
 .product-info {
   padding-inline: 5vw;
@@ -149,7 +189,8 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
-  width: 90vw; /* Ajusta el ancho según tus necesidades */
+  width: 90vw;
+  /* Ajusta el ancho según tus necesidades */
   overflow: hidden;
 }
 
@@ -175,6 +216,7 @@
 .product-details {
   padding-block: 2vw;
 }
+
 .product-details p {
   padding-bottom: 3vw;
   color: gold;
@@ -232,7 +274,8 @@ button {
   cursor: pointer;
   line-height: 2;
   margin-inline: 5vw;
-  width: 90vw; /* Ajusta el ancho según tus necesidades */
+  width: 90vw;
+  /* Ajusta el ancho según tus necesidades */
 }
 
 button span {
@@ -264,7 +307,7 @@ button:hover {
 .border-right {
   border-right: lightgray 1px solid;
   padding-right: 5vw;
-} 
+}
 
 .payment-logos {
   display: flex;
