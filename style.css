@@ -15,7 +15,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80vw; /* Ajusta el ancho según tus necesidades */
   overflow: hidden;
   padding-inline: 5vw;
 }
@@ -25,22 +24,14 @@
   padding: 0;
   margin: 0;
   display: flex;
-  animation: marquee 20s linear infinite;
+  animation: marquee 30s linear infinite;
 }
 
 .black-box ul li {
-  margin-right: 30px;
   font-size: 10px;
-  width: 50vw;
-}
-
-@keyframes marquee {
-  0% {
-      transform: translateX(100%);
-  }
-  100% {
-      transform: translateX(-100%);
-  }
+  width: 80vw;
+  text-align: center;
+  line-height: 4;
 }
 
 .logos {
@@ -49,6 +40,7 @@
   justify-content: space-between;
   width: 100vw; /* Ajusta el ancho según tus necesidades */
   overflow: hidden;
+  padding-inline: 4vw;
 }
 
 .Content-wait {

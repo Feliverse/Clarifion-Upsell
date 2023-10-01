@@ -1,24 +1,28 @@
-const ul = document.querySelector('.black-box ul');
-const liList = document.querySelectorAll('.black-box ul li');
+const prevButton = document.getElementById("prevButton");
+const nextButton = document.getElementById("nextButton");
+const carouselList = document.getElementById("carouselList");
+const items = carouselList.getElementsByTagName("li");
 
 let currentIndex = 0;
 
-function nextSlide() {
-    ul.style.transform = `translateX(-${currentIndex * 100}%)`;
-    currentIndex = (currentIndex + 1) % liList.length;
+function showItem(index) {
+  for (let i = 0; i < items.length; i++) {
+    items[i].style.display = "none";
+  }
+  items[index].style.display = "block";
 }
 
-// Cambia el slide cada 3 segundos (ajusta según tus preferencias)
-setInterval(nextSlide, 3000);
-
-// Puedes ajustar el tiempo de pausa en cada elemento aquí (en milisegundos)
-const pausa = 3000; // 1 segundo
-
-function pausarCarrusel() {
-    clearInterval(interval);
-    setTimeout(() => {
-        interval = setInterval(nextSlide, 3000);
-    }, pausa);
+function moveToNextItem() {
+  currentIndex = (currentIndex + 1) % items.length;
+  showItem(currentIndex);
 }
 
-let interval = setInterval(pausarCarrusel, 3000 + pausa); // 3 segundos de cambio + 1 segundo de pausa
+function moveToPrevItem() {
+  currentIndex = (currentIndex - 1 + items.length) % items.length;
+  showItem(currentIndex);
+}
+
+prevButton.addEventListener("click", moveToPrevItem);
+nextButton.addEventListener("click", moveToNextItem);
+
+showItem(currentIndex); // Mostrar el primer elemento al cargar la página
