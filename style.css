@@ -133,12 +133,20 @@
   color: rgb(6, 142, 253);
 }
 
+.more-size {
+  display: none;
+}
+
 .product-img img {
   width: 100%;
   height: 100%;
   /* Establece la altura para que coincida con el contenedor */
   object-fit: cover;
   padding: 5%;
+}
+
+.product-details span {
+  display: none;
 }
 
 .opinion {
@@ -270,7 +278,6 @@ button {
   font-size: 1rem;
   cursor: pointer;
   line-height: 2;
-  margin-inline: 5vw;
   width: 90vw;
   /* Ajusta el ancho según tus necesidades */
 }
@@ -359,17 +366,19 @@ footer {
   #carouselList {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    width: 90vw;
+    width: 100vw;
     /* Ajusta el ancho según tus necesidades */
     overflow: hidden;
-    padding-inline: 5vw;
+    padding-inline: 0vw;
+    
   }
 
   #carouselList li {
     display: flex;
-    padding-inline: 5vw;
+    padding-inline: 0vw;
+    font-size: xx-small;
+    justify-content: center;
   }
 
   #prevButton,
@@ -425,6 +434,13 @@ footer {
     padding: 0 1vw;
   }
 
+  /* .influencer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  } */
+
   .product {
     background-color: rgba(211, 211, 211, 0.13);
     margin: 0 7vw 3vw;
@@ -439,7 +455,7 @@ footer {
   }
 
   .more-size {
-    font-size: 2rem;
+    font-size: 150%;
   }
 
   .checklist {
@@ -464,8 +480,22 @@ footer {
     padding-left: 2vw
   }
 
+  .product-info {
+    padding-top: 2vw;
+  }
+
   .product-details p {
     padding: 0;
+  }
+
+  .product-details span {
+    font-size: xx-small;
+    line-height: 0.8;
+  }
+
+  .price {
+    padding-block: 0vw;
+    width: auto;
   }
 
   .product-botton-text {
