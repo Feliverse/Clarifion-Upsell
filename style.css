@@ -359,17 +359,19 @@ footer {
   #carouselList {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    width: 90vw;
+    width: 100vw;
     /* Ajusta el ancho según tus necesidades */
     overflow: hidden;
-    padding-inline: 5vw;
+    padding-inline: 0vw;
+    
   }
 
   #carouselList li {
     display: flex;
-    padding-inline: 5vw;
+    padding-inline: 0vw;
+    font-size: xx-small;
+    justify-content: center;
   }
 
   #prevButton,
@@ -425,6 +427,13 @@ footer {
     padding: 0 1vw;
   }
 
+  /* .influencer img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  } */
+
   .product {
     background-color: rgba(211, 211, 211, 0.13);
     margin: 0 7vw 3vw;
@@ -439,7 +448,7 @@ footer {
   }
 
   .more-size {
-    font-size: 2rem;
+    font-size: 150%;
   }
 
   .checklist {
@@ -466,6 +475,16 @@ footer {
 
   .product-details p {
     padding: 0;
+  }
+
+  .product-details span {
+    font-size: xx-small;
+    line-height: 0.8;
+  }
+
+  .price {
+    padding-block: 0vw;
+    width: auto;
   }
 
   .product-botton-text {

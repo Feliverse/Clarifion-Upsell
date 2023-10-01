@@ -6,10 +6,12 @@ const items = carouselList.getElementsByTagName("li");
 let currentIndex = 0;
 
 function showItem(index) {
-  for (let i = 0; i < items.length; i++) {
-    items[i].style.display = "none";
+  if (window.innerWidth <= 768) {
+    for (let i = 0; i < items.length; i++) {
+      items[i].style.display = "none";
+    }
+    items[index].style.display = "block";
   }
-  items[index].style.display = "block";
 }
 
 function moveToNextItem() {
