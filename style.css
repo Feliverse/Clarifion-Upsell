@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 800px; /* Ajusta el ancho según tus necesidades */
+  width: 100vw; /* Ajusta el ancho según tus necesidades */
   overflow: hidden;
 }
 
@@ -45,8 +45,132 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 800px; /* Ajusta el ancho según tus necesidades */
+  width: 100vw; /* Ajusta el ancho según tus necesidades */
   overflow: hidden;
 }
 
+.Content-wait {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+  width: 100vw; /* Ajusta el ancho según tus necesidades */
+  overflow: hidden;
+  padding-inline: 5vw;
 
+}
+
+.wait-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.Wait {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw; /* Ajusta el ancho según tus necesidades */
+  overflow: hidden;
+  padding-inline: 5vw;
+}
+
+
+.steps p {
+  display: flex;
+  flex-direction: column; 
+  text-align: center;
+  font-size: 3vw;
+  width: 50vw;
+  padding-block: 3vw;
+}
+
+.steps p icon {
+  border-radius: 50%;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin: 0 auto;
+  margin-bottom: 2vw;
+}
+
+.step-done icon {
+  color: #fff;
+  background-color: #46ec30;
+}
+
+.step-active icon {
+  color: #fff;
+  background-color: #5b7ce6;
+  font-weight: bold;
+}
+
+.step-inactive icon {
+  color: #5b7ce6;
+  border: 1px solid#5b7ce6;
+}
+
+.offer {
+  font-size: 1.3rem;
+  padding-inline: 5vw;
+}
+
+.centered-text {
+  text-align: center;
+}
+
+.blue-text {
+  color: rgb(6, 142, 253);
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%; /* Establece la altura para que coincida con el contenedor */
+  object-fit: cover;
+  padding: 5%;
+}
+
+.opinion {
+  display: none;
+}
+
+.product-info {
+  padding-inline: 5vw;
+}
+
+.product-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 90vw; /* Ajusta el ancho según tus necesidades */
+  overflow: hidden;
+}
+
+.price {
+  width: 20%;
+
+.past-price {
+  text-decoration: line-through;
+  color: #5b7ce6;
+  font-size: smaller;
+  padding-right: ;
+}
+
+.current-price {
+  font-weight: bold;
+}
+
+.product-details {
+  background-color: #5b7ce6;
+}
